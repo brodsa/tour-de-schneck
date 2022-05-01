@@ -1,0 +1,49 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body{
+    width:1000px;
+}
+
+.log{
+    width:50px;
+    text-align: center;
+}
+
+.team-a{
+    background-color: violet;
+    display:inline-block;
+}
+
+/*pseudo element*/
+.team-a::before{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+
+/*display as background pct*/
+.station-container{
+    position: relative;
+}
+
+
+.point {
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: silver;
+    position: absolute;
+}
+
+/*python*/
+.team-a-position{
+    background-color: violet;
+    left: 50px;
+    top: 100px;
+}
+
+
