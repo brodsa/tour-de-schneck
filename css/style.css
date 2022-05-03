@@ -60,13 +60,19 @@
 }
 
 .menu__items a:hover,
-.menu__items:hover{
+.menu__items a:focus,
+.menu__items a:active{
     background-color: var(--color-tertiary);
     color: var(--white);
     padding: 0;
 }
 
-.menu__items:hover{
+.menu__items:hover,
+.menu__items:focus,
+.menu__items:active{
+    background-color: var(--color-tertiary);
+    color: var(--white);
+    padding: 0;
     padding: 10px 0;
     margin: 5px 0;
 
