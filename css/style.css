@@ -4,7 +4,7 @@
     --color-secondary: #B64D4F ;
     --color-tertiary: #D79FA0;
     --white: #fcfcfc;
-
+    --gray:rgb(219, 213, 213);
 }
 
 .body{
@@ -13,7 +13,7 @@
 
 .grid{
     display:grid;
-    grid-template-rows: auto 400px repeat(2, auto) 70px;
+    grid-template-rows: auto 400px repeat(3, auto) 70px;
 }
 
 
@@ -34,11 +34,108 @@
     padding:0;
 }
 
+
 .menu{
     display:none;
 }
 
+.hero{
+    background-image: url("../img/header_mia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+ 
+    box-shadow: 0 10px 50px -2px silver;
+    
+
+}
+
+.hero__text{
+    padding-bottom: 70px;
+}
+
+.hero__title,
+.hero__subtitle{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero__text > :last-child{
+    display: none;
+}
+
+
+.team{
+	border: 1px solid var(--gray);
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 35px 0 20px 0;
+	text-align: center;
+
+}
+
+.team__logo{
+    display: inline;
+    padding:10px;
+	border-radius: 50%;
+    color: var(--white);
+    background-color:aquamarine;
+}
+
+.team__resutls{
+	padding: 0 10px;
+	margin: 0px auto;
+}
+
+.team__info{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer{
+    background-color: var(--color-primary);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+.footer__copyright,
+.footer__designer{
+    flex: 0 1 20%;
+}
+
+.footer_designer a{
+    color:var(--white);
+}
+
+.footer_thanks{
+    text-align: center;
+}
+
+
 @media screen and (min-width:700px) {
+
+    .grid{
+        grid-template-rows: auto 500px repeat(2, auto) 70px;
+    }
+
+    .header__title{
+        font-size: 18px;
+    }
+
+    .header__subtitle{
+        display:none;
+    }
     
     .menu{
         display: flex;
@@ -47,19 +144,17 @@
         column-gap: 20px;
     }
 
-
-
     .menu__items{
         display: inline-block;
         text-align: center;
         padding: 10px 50px;
+        margin: 5px 0;
         border: 0;
 
         background-color: var(--color-primary);
         color: var(--white);
         border-radius: 20px;
         text-decoration: none;
-
 
     }
 
@@ -70,48 +165,76 @@
         color: var(--white);
         padding: 10px 50px;
         margin: 5px 0;
+        transform: scale(1.1);
+    }
+
+    .hero__subtitle{
+        display: block;
+    }
+
+    .hero__text{
+        padding-bottom: 60px;
+    }
+
+    .hero__text > :last-child{
+        display:block;
+    }
+
+    .teams{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team{
+        margin-top: 15px;
+        flex: 0 0 calc((100% - 45px)/3);
     }
     
 }
 
 
 @media screen and (min-width:960px) {
+    .grid{
+        grid-template-rows: auto 550px repeat(2, auto) 70px;
+    }
+
     .header{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        margin: 0 20px;
+        margin:20px 40px;
+    }
+
+    .header__title{
+        display: inline;
     }
 
     .menu{
-        margin:0;
+        margin: 0;
+    }
+
+    .hero{
+        background-position: center;
+    }
+
+    .hero__text{
+        padding-bottom: 50px;
+    }
+
+    .teams{
+        max-width: 1000px;
+        margin: 0 auto;
+        
+    }
+
+    .team{
+        margin-top: 15px;
+        flex: 0 0 calc((100% - 60px)/4);
     }
 }
 
 
-.hero{
-    background-image: url("../img/anna_lorenz_mia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-}
-
-.hero__text{
-    padding-bottom: 100px;
-}
-
-.hero__title,
-.hero__subtitle{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
 
 
 .log{
