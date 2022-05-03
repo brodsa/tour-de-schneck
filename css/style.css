@@ -1,8 +1,8 @@
 
 :root{
-    --color-primary: #6F132F;
-    --color-secondary: #765760;
-    --color-tertiary: #DFC8CF;
+    --color-primary: #AA2C2E;
+    --color-secondary: #B64D4F ;
+    --color-tertiary: #D79FA0;
     --white: #fcfcfc;
 
 }
@@ -13,35 +13,25 @@
 
 .grid{
     display:grid;
-    grid-template-rows: 300px auto auto auto 70px;
+    grid-template-rows: auto 400px repeat(2, auto) 70px;
 }
 
 
 .header{
     grid-row: 0 / 1;
-    background-color: var(--color-primary);
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-
+    background-color: var(--white);
+    color: var(--color-primary);
 }
 
 .header__logo{
-    margin: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    display: block;
 }
 
-.header__logo p{
-    text-align:center;
-}
 
 .menu{
-    margin-right: 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .menu__list{
@@ -52,30 +42,49 @@
 
 .menu__items{
     display: inline-block;
-    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px 0;
+
+    background-color: var(--color-primary);
+    color: var(--white);
+    border-radius: 20px;
 }
 
-.menu__items a,
-.header__logo a{
-    color:var(--white);
+
+.menu__items a{
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 0;
+    color: var(--white);
 }
 
-.menu__items:hover,
 .menu__items a:hover,
-.header__logo a:hover{
+.menu__items:hover{
     background-color: var(--color-tertiary);
-    color: var(--color-primary);
-    padding: 10px 20px;
+    color: var(--white);
+    padding: 0;
+}
+
+.menu__items:hover{
+    padding: 10px 0;
+    margin: 5px 0;
+
 }
 
 .hero{
-    background-image: url("../img/header_img.jfif");
+    background-image: url("../img/anna_lorenz_mia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    color: var(--white);
+    display: flex;
+
 }
 
 .hero__text{
     margin: 20px auto 0 auto;
+    align-items:flex-end;
 }
 
 .hero__title{
@@ -110,6 +119,7 @@
 /*display as background pct*/
 .station-container{
     position: relative;
+    display: none;
 }
 
 
