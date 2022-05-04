@@ -40,10 +40,10 @@
 }
 
 .hero{
-    background-image: url("../img/header_mia.jpg");
+    background-image: url("../img/mia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     color: var(--white);
 
@@ -175,6 +175,12 @@
         padding: 10px 50px;
         margin: 5px 0;
         transform: scale(1.1);
+    }
+
+    .hero{
+        background-image: url("../img/header_mia.jpg");
+        background-position: bottom;
+        background-attachment: fixed;
     }
 
     .hero__subtitle{
