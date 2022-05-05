@@ -39,45 +39,18 @@ max_station = 13
 
 
 # Example to display
-
 example_score = int(df_team[df_team["Gruppe"] == "Cevedale"]["Score"])
+example_bonus_score = int(df_team[df_team["Gruppe"] == "Cevedale"]["Originelle_Zusatzpunkte"])
 example_team_station = df_team_station["Cevedale"]
 example_station = df_station["Station A"]
 example_order = int(df_team[df_team["Gruppe"] == "Cevedale"]["Order"])
+example_color = list(df_team[df_team["Gruppe"] == "Cevedale"]["color"])[0]
+example_short = list(df_team[df_team["Gruppe"] == "Cevedale"]["short"])[0]
 print(f"Score: {example_score}/{max_score}")
 print(f"Stationen: {example_team_station}/{max_station}")
 print(f"Teamsreihnfolge: {example_order}")
 print(f"Teams in Stationen: {example_station}/{max_team}")
+print(f"Farbe: {example_color}")
+print(f"Abbkürzung: {example_short}")
 
-
-
-
-
-
-
-
-
-# from __future__ import print_function
-# import gspread
-# from oauth2client.client import SignedJwtAssertionCredentials
-# import pandas as pd
-# import json
-
-
-# SCOPE = ["https://docs.google.com/spreadsheets/d/1eHuUXIXMmwADt9B6cpSuLWSNGAWvgYTps6rU6FHEZRQ/edit?resourcekey#gid=174414602"]
-# SECRETS_FILE = "tour-de-schneck-6c39180b57b4.json"
-# SPREADSHEET = "Ergebnisse"
-
-
-# json_key = json.load(open(SECRETS_FILE))
-# # Authenticate using the signed key
-# credentials = SignedJwtAssertionCredentials(json_key['client_email'],
-#                                             json_key['private_key'], SCOPE)
-
-
-# gc = gspread.authorize(credentials)
-
-
-# print("The following sheets are available")
-# for sheet in gc.openall():
-#     print("{} - {}".format(sheet.title, sheet.id))
+print(df_team[df_team["Gruppe"] == "Cevedale"])
