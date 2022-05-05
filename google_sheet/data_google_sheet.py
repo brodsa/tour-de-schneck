@@ -1,3 +1,5 @@
+from gzip import READ
+from timeit import repeat
 import gspread
 import pandas as pd
 
@@ -21,36 +23,40 @@ color_df = pd.DataFrame(color_list)
 df = df_original[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
 df_color = color_df[["Gruppennamen","short","color"]].dropna().iloc[0:25]
 df_color["Gruppe"] = df_color["Gruppennamen"]
+all_teams = df_color["Gruppe"]
 
 # teams summary
 df_team = df.groupby("Team").sum()
 df_team.sort_values(by=['Score'], inplace=True, ascending=False)
-df_team['Order'] = list(range(df_team.shape[0]))
+df_team['order'] = list(range(df_team.shape[0]))
 df_team["Gruppe"] = df_team.index
 df_team = pd.merge(df_team,df_color,on=["Gruppe"])
+df_team["max_score"]= 10 * 13
+df_team["w_score"] = df_team.apply(lambda x: str(x["Score"]) + "/" + str(x["max_score"]),axis=1)
+# df_team["display"]
 
-df_team_station = df['Team'].value_counts()
-max_team = len(df['Team'].unique())
-max_score= 10 * 13
+df_team_station = pd.DataFrame(df['Team'].value_counts())
+df_team_station["station_max"] = 13 
+df_team_station["station_done"] = df_team_station["Team"] 
+df_team_station["Gruppe"] = df_team_station.index
+df_team_station["w_station_done"] = df_team_station.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
 
-#station summary
-df_station = df["Station"].value_counts()  
-max_station = 13
+df_team = pd.merge(df_team,df_team_station,on="Gruppe")
+df_team.index = df_team["short"]
+
+df_station = pd.DataFrame(df["Station"].value_counts())
+df_station["teams_max"] = len(df['Team'].unique())
+df_station["teams_done"] = df_station["Station"]
+df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '/' + str(x["teams_max"]),axis=1)
+df_station["Station"] = df_station.index 
+df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
+df_station.index = df_station["station"]
 
 
 # Example to display
-example_score = int(df_team[df_team["Gruppe"] == "Cevedale"]["Score"])
-example_bonus_score = int(df_team[df_team["Gruppe"] == "Cevedale"]["Originelle_Zusatzpunkte"])
-example_team_station = df_team_station["Cevedale"]
-example_station = df_station["Station A"]
-example_order = int(df_team[df_team["Gruppe"] == "Cevedale"]["Order"])
-example_color = list(df_team[df_team["Gruppe"] == "Cevedale"]["color"])[0]
-example_short = list(df_team[df_team["Gruppe"] == "Cevedale"]["short"])[0]
-print(f"Score: {example_score}/{max_score}")
-print(f"Stationen: {example_team_station}/{max_station}")
-print(f"Teamsreihnfolge: {example_order}")
-print(f"Teams in Stationen: {example_station}/{max_team}")
-print(f"Farbe: {example_color}")
-print(f"Abbkürzung: {example_short}")
-
-print(df_team[df_team["Gruppe"] == "Cevedale"])
+print("Score {}".format(df_team.loc["CE","w_score"]))
+print("Stationen: {}".format(df_team.loc["CE","w_station_done"]))
+print("Teamsreihnfolge: {}".format(df_team.loc["CE","order"]))
+print("Teams in Stationen: {}".format(df_station.loc["A","w_teams_done"]))
+print("Farbe: {}".format(df_team.loc["CE","color"]))
+print("Abbkürzung: {}".format(df_team.loc["CE","short"]))
