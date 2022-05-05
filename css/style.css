@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: flex-end;
  
-    box-shadow: 0 10px 50px -2px var(--color-tertiary), 0 -10px 50px -2px var(--color-tertiary);
+    box-shadow: 0 10px 50px -2px silver, 0 -10px 50px -2px silver;
     
 
 }
