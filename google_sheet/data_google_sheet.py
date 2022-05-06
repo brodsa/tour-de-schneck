@@ -1,5 +1,3 @@
-from gzip import READ
-from timeit import repeat
 import gspread
 import pandas as pd
 
@@ -26,14 +24,19 @@ df_color["Gruppe"] = df_color["Gruppennamen"]
 all_teams = df_color["Gruppe"]
 
 # teams summary
-df_team = df.groupby("Team").sum()
-df_team.sort_values(by=['Score'], inplace=True, ascending=False)
-df_team['order'] = list(range(df_team.shape[0]))
-df_team["Gruppe"] = df_team.index
-df_team = pd.merge(df_team,df_color,on=["Gruppe"])
-df_team["max_score"]= 10 * 13
-df_team["w_score"] = df_team.apply(lambda x: str(x["Score"]) + "/" + str(x["max_score"]),axis=1)
-# df_team["display"]
+df_team_tmp = df.groupby("Team").sum()
+df_team_tmp.sort_values(by=['Score'], inplace=True, ascending=False)
+df_team_tmp['order'] = list(range(df_team_tmp.shape[0]))
+df_team_tmp["Gruppe"] = df_team_tmp.index
+df_team_tmp= pd.merge(df_color,df_team_tmp,on=["Gruppe"],how="outer")
+df_team_tmp['order'].fillna(100,inplace=True)
+df_team_tmp.fillna(0,inplace=True)
+df_team_tmp["max_score"]= 10 * 13
+df_team_tmp["order"] = df_team_tmp.apply(lambda x: int(x["order"]), axis=1)
+df_team_tmp["Score"] = df_team_tmp.apply(lambda x: int(x["Score"]), axis=1)
+df_team_tmp["Originelle_Zusatzpunkte"] = df_team_tmp.apply(lambda x: int(x["Originelle_Zusatzpunkte"]), axis=1)
+df_team_tmp["w_score"] = df_team_tmp.apply(lambda x: str(x["Score"]) + "/" + str(x["max_score"]),axis=1)
+
 
 df_team_station = pd.DataFrame(df['Team'].value_counts())
 df_team_station["station_max"] = 13 
@@ -41,8 +44,10 @@ df_team_station["station_done"] = df_team_station["Team"]
 df_team_station["Gruppe"] = df_team_station.index
 df_team_station["w_station_done"] = df_team_station.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
 
-df_team = pd.merge(df_team,df_team_station,on="Gruppe")
+df_team = pd.merge(df_team_tmp,df_team_station,on="Gruppe",how='outer')
+print(df_team)
 df_team.index = df_team["short"]
+
 
 df_station = pd.DataFrame(df["Station"].value_counts())
 df_station["teams_max"] = len(df['Team'].unique())

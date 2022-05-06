@@ -75,6 +75,11 @@
     display: none;
 }
 
+.teams{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .team{
 	border: 2px solid var(--color-primary);
@@ -83,18 +88,22 @@
 	margin: 20px 20px 0px 20px;
 	padding: 35px 0 20px 0;
 	text-align: center;
+    order: 100;
 
 }
 
 .team__logo{
-    display: inline;
+    display: inline-block;
+    width: 35px;
+    height: 30px;
     padding:10px;
 	border-radius: 50%;
     color: var(--white);
-    background-color:aquamarine;
+    background-color:gray;
 }
 
-.team__resutls{
+
+.team__results{
 	padding: 0 10px;
 	margin: 0px auto;
 }

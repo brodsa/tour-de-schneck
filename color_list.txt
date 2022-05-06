@@ -40,3 +40,27 @@ seda
 #cccccc
 #758184
 #5d5b6a
+
+
+
+      short         Gruppe
+short
+O         O         Ortler
+Z         Z   Zufallspitze
+M         M          Mönch
+DS       DS      Dachstein
+DU       DU   Dufourspitze
+ÖT       ÖT        Ötscher
+GG      GG   Großglockner
+CH       CH       Chachani
+GÖ       GÖ         Göller
+GV     GV  Großvenediger
+SC       SC     Schneeberg
+V         V    Vallunaraju
+GL       GL      Glockturm
+SA       SA     Schneealpe
+P         P          Pisco
+R         R            Rax
+HS       HS     Hochschwab
+MK       MK   Mittagskogel
+CE       CE       Cevedale
