@@ -81,8 +81,11 @@ df_team["Teamname"] = df_team["short"]
 # Visualization
 df_team.sort_values(by=["Score"],inplace=True,ascending=False)
 
+colors = df_team["color"]
+sns.set_palette(sns.color_palette(colors))
+
 plt.figure(figsize=(20,10), dpi=200)
-sns.barplot(y = 'Score', x="Teamname", data = df_team, palette = 'magma')
+sns.barplot(y = 'Score', x="Teamname", data = df_team)
 plt.xlabel('Team', fontsize=20)
 plt.ylabel('Score', fontsize=20)
 plt.xticks(fontsize= 18)
