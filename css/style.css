@@ -13,7 +13,7 @@
 
 .grid{
     display:grid;
-    grid-template-rows: auto 350px repeat(3, auto) auto;
+    grid-template-rows: auto 350px auto auto auto;
 }
 
 
@@ -90,6 +90,11 @@
 .section__stations{
     background-color:var(--color-tertiary);
 }
+
+.map{
+    display:none;
+}
+
 
 .station{
     display: flex;
@@ -300,7 +305,7 @@
 
 @media screen and (min-width:960px) {
     .grid{
-        grid-template-rows: auto 550px repeat(2, auto) 70px;
+        grid-template-rows: auto 550px repeat(3, auto) 70px;
     }
 
     .header{
@@ -324,6 +329,19 @@
 
     .hero__text{
         padding-bottom: 50px;
+    }
+
+
+    .map{
+        display:block;
+        height:600px;
+    }
+    
+    .map__img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    
     }
 
     .station{

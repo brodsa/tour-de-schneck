@@ -1,5 +1,7 @@
 import gspread
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 # Connect to google sheet
@@ -75,4 +77,14 @@ print("Farbe: {}".format(df_team.loc["CE","color"]))
 print("Abbkürzung: {}".format(df_team.loc["CE","short"]))
 
 
+df_team["Teamname"] = df_team["short"]
 # Visualization
+df_team.sort_values(by=["Score"],inplace=True,ascending=False)
+
+plt.figure(figsize=(20,10), dpi=200)
+sns.barplot(y = 'Score', x="Teamname", data = df_team, palette = 'magma')
+plt.xlabel('Team', fontsize=20)
+plt.ylabel('Score', fontsize=20)
+plt.xticks(fontsize= 18)
+plt.yticks(fontsize= 18)
+plt.savefig("./img/300.png" , dpi = 200)
