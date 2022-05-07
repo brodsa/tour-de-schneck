@@ -75,6 +75,57 @@
     display: none;
 }
 
+.section{
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.section__title{
+    margin:0 ;
+    padding:0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section__stations{
+    background-color:var(--color-tertiary);
+}
+
+.station{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+	margin: 20px 20px 0px 20px;
+	padding: 35px 0 20px 0;
+    background-color: white
+}
+
+.station__logo{
+	flex: 1 1 20%;
+	padding: 0 20px;
+    fill:var(--color-primary);
+
+}
+
+.station__text{
+    flex: 1 1 80%;
+	padding-right: 20px;
+	text-align: left;
+}
+
+.station__name{
+    margin:0;
+    padding:0;
+    padding-left: 4px;
+}
+
+.station__info p {
+    margin:0;
+    padding:0;
+}
+
+
 .teams{
     display: flex;
     flex-direction: column;
@@ -82,13 +133,15 @@
 
 
 .team{
-	border: 2px solid var(--color-primary);
-    box-shadow: 2px 2px 10px var(--gray);
 	border-radius: 10px;
 	margin: 20px 20px 0px 20px;
 	padding: 35px 0 20px 0;
 	text-align: center;
     order: 100;
+
+    border: 2px solid var(--color-secondary);
+    
+
 
 }
 
@@ -100,6 +153,9 @@
 	border-radius: 50%;
     color: var(--white);
     background-color:gray;
+    border: 2px solid white;
+    box-shadow: 0 10px 50px -2px var(--color-tertiary), 0 -10px 50px -2px var(--color-tertiary);
+
 }
 
 
@@ -225,6 +281,19 @@
         flex: 0 0 calc((100% - 45px)/3);
 
     }
+
+    .stations{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .station{
+        margin:0;
+        margin-top: 20px;
+        flex: 0 0 calc((100% - 30px)/2);
+    }
     
 }
 
@@ -257,7 +326,13 @@
         padding-bottom: 50px;
     }
 
-    .teams{
+    .station{
+        margin-top: 20px;
+        flex: 0 0 calc((100% - 60px)/3);
+    }
+
+    .teams,
+    .stations{
         max-width: 1000px;
         margin: 0 auto;
         

@@ -16,6 +16,8 @@ df_original = pd.DataFrame(list_of_dicts)
 worksheet_color = sh.worksheet("Stationsübersicht")
 color_list = worksheet_color.get_all_records()
 color_df = pd.DataFrame(color_list)
+stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:13]
+stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
 df = df_original[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
@@ -45,17 +47,23 @@ df_team_station["Gruppe"] = df_team_station.index
 df_team_station["w_station_done"] = df_team_station.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
 
 df_team = pd.merge(df_team_tmp,df_team_station,on="Gruppe",how='outer')
-print(df_team)
 df_team.index = df_team["short"]
 
 
 df_station = pd.DataFrame(df["Station"].value_counts())
 df_station["teams_max"] = len(df['Team'].unique())
 df_station["teams_done"] = df_station["Station"]
-df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '/' + str(x["teams_max"]),axis=1)
 df_station["Station"] = df_station.index 
+df_station = pd.merge(df_station,stations_df,on="Station", how="outer")
+df_station["teams_max"].fillna(20,inplace=True)
+df_station["teams_done"].fillna(0,inplace=True)
+df_station["teams_max"] = df_station.apply(lambda x: int(x["teams_max"]), axis=1)
+df_station["teams_done"] = df_station.apply(lambda x: int(x["teams_done"]), axis=1)
+df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '/' + str(x["teams_max"]),axis=1)
+
 df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
 df_station.index = df_station["station"]
+print(df_station)
 
 
 # Example to display
@@ -65,3 +73,6 @@ print("Teamsreihnfolge: {}".format(df_team.loc["CE","order"]))
 print("Teams in Stationen: {}".format(df_station.loc["A","w_teams_done"]))
 print("Farbe: {}".format(df_team.loc["CE","color"]))
 print("Abbkürzung: {}".format(df_team.loc["CE","short"]))
+
+
+# Visualization
