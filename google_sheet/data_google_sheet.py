@@ -34,7 +34,8 @@ df_team_tmp['order'] = list(range(df_team_tmp.shape[0]))
 df_team_tmp["Gruppe"] = df_team_tmp.index
 df_team_tmp= pd.merge(df_color,df_team_tmp,on=["Gruppe"],how="outer")
 df_team_tmp['order'].fillna(100,inplace=True)
-df_team_tmp.fillna(0,inplace=True)
+df_team_tmp["Score"].fillna(0,inplace=True)
+df_team_tmp["Originelle_Zusatzpunkte"].fillna(0,inplace=True)
 df_team_tmp["max_score"]= 10 * 13
 df_team_tmp["order"] = df_team_tmp.apply(lambda x: int(x["order"]), axis=1)
 df_team_tmp["Score"] = df_team_tmp.apply(lambda x: int(x["Score"]), axis=1)
@@ -46,10 +47,20 @@ df_team_station = pd.DataFrame(df['Team'].value_counts())
 df_team_station["station_max"] = 13 
 df_team_station["station_done"] = df_team_station["Team"] 
 df_team_station["Gruppe"] = df_team_station.index
-df_team_station["w_station_done"] = df_team_station.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
 
 df_team = pd.merge(df_team_tmp,df_team_station,on="Gruppe",how='outer')
 df_team.index = df_team["short"]
+df_team['station_max'].fillna(13,inplace=True)
+df_team["station_done"].fillna(0,inplace=True)
+df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
+df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
+
+print(df_team[['Gruppennamen', 'short', 'Score', 'max_score', 'w_score',
+       'station_max', 'station_done']])
+
+df_team["w_station_done"] = df_team.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
+
+
 
 
 df_station = pd.DataFrame(df["Station"].value_counts())
@@ -65,7 +76,6 @@ df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '
 
 df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
 df_station.index = df_station["station"]
-print(df_station)
 
 
 # Example to display
