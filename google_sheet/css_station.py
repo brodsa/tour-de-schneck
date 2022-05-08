@@ -53,3 +53,4 @@ with open("./css/style_station.css", "w") as f_station:
 
         """ )
 
+print("Python: style_station.css compiled")

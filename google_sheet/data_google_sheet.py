@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Connect to google sheet
 gc = gspread.service_account(filename='forms-tour-de-schneck-7a82ceba1539.json')
 sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1eHuUXIXMmwADt9B6cpSuLWSNGAWvgYTps6rU6FHEZRQ/edit?resourcekey#gid=174414602')
-print("Connected to google sheet")
+print("Python: Connected to google sheet")
 
 
 # Get the data
@@ -54,13 +54,7 @@ df_team['station_max'].fillna(13,inplace=True)
 df_team["station_done"].fillna(0,inplace=True)
 df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
 df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
-
-print(df_team[['Gruppennamen', 'short', 'Score', 'max_score', 'w_score',
-       'station_max', 'station_done']])
-
 df_team["w_station_done"] = df_team.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
-
-
 
 
 df_station = pd.DataFrame(df["Station"].value_counts())
@@ -79,16 +73,16 @@ df_station.index = df_station["station"]
 
 
 # Example to display
-print("Score {}".format(df_team.loc["CE","w_score"]))
-print("Stationen: {}".format(df_team.loc["CE","w_station_done"]))
-print("Teamsreihnfolge: {}".format(df_team.loc["CE","order"]))
-print("Teams in Stationen: {}".format(df_station.loc["A","w_teams_done"]))
-print("Farbe: {}".format(df_team.loc["CE","color"]))
-print("Abbkürzung: {}".format(df_team.loc["CE","short"]))
+# print("Score {}".format(df_team.loc["CE","w_score"]))
+# print("Stationen: {}".format(df_team.loc["CE","w_station_done"]))
+# print("Teamsreihnfolge: {}".format(df_team.loc["CE","order"]))
+# print("Teams in Stationen: {}".format(df_station.loc["A","w_teams_done"]))
+# print("Farbe: {}".format(df_team.loc["CE","color"]))
+# print("Abbkürzung: {}".format(df_team.loc["CE","short"]))
 
 
-df_team["Teamname"] = df_team["short"]
 # Visualization
+df_team["Teamname"] = df_team["short"]
 df_team.sort_values(by=["Score"],inplace=True,ascending=False)
 colors = df_team["color"]
 sns.set_palette(sns.color_palette(colors))
@@ -112,5 +106,6 @@ plt.ylabel('Bonuspunkte', fontsize=20)
 plt.xticks(fontsize= 18)
 plt.yticks(fontsize= 18)
 plt.savefig("./img/Bonus.png" , dpi = 200)
+print("Python: Plots done")
 
 

@@ -391,3 +391,6 @@ with open("./css/style_teams.css", "w") as f_team:
 
         
         """ )
+
+
+print("Python: style_teams.css compiled")
