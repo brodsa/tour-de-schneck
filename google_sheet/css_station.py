@@ -1,5 +1,7 @@
 from data_google_sheet import df_station
+import os
 
+print(os.getcwd)
 with open("./css/style_station.css", "w") as f_station:
     f_station.write(
         f"""
