@@ -10,7 +10,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["GL","w_station_done"]}\"
         }}
         .GL .team__bonus::after {{
-            content: \"{df_team.loc["GL","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["GL","w_bonus"]}\"
         }}
         .GL .team__logo {{
             background-color: {df_team.loc["GL","color"]}
@@ -29,7 +29,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["O","w_station_done"]}\"
         }}
         .O .team__bonus::after {{
-            content: \"{df_team.loc["O","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["O","w_bonus"]}\"
         }}
         .O .team__logo {{
             background-color: {df_team.loc["O","color"]}
@@ -49,7 +49,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["Z","w_station_done"]}\"
         }}
         .Z .team__bonus::after {{
-            content: \"{df_team.loc["Z","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["Z","w_bonus"]}\"
         }}
         .Z .team__logo {{
             background-color: {df_team.loc["Z","color"]}
@@ -70,7 +70,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["M","w_station_done"]}\"
         }}
         .M .team__bonus::after {{
-            content: \"{df_team.loc["M","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["M","w_bonus"]}\"
         }}
         .M .team__logo {{
             background-color: {df_team.loc["M","color"]}
@@ -90,7 +90,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["DS","w_station_done"]}\"
         }}
         .DS .team__bonus::after {{
-            content: \"{df_team.loc["DS","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["DS","w_bonus"]}\"
         }}
         .DS .team__logo {{
             background-color: {df_team.loc["DS","color"]}
@@ -110,7 +110,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["DU","w_station_done"]}\"
         }}
         .DU .team__bonus::after {{
-            content: \"{df_team.loc["DU","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["DU","w_bonus"]}\"
         }}
         .DU .team__logo {{
             background-color: {df_team.loc["DU","color"]}
@@ -131,7 +131,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["ÖT","w_station_done"]}\"
         }}
         .OT .team__bonus::after {{
-            content: \"{df_team.loc["ÖT","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["ÖT","w_bonus"]}\"
         }}
         .OT .team__logo {{
             background-color: {df_team.loc["ÖT","color"]}
@@ -152,7 +152,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["GG","w_station_done"]}\"
         }}
         .GG .team__bonus::after {{
-            content: \"{df_team.loc["GG","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["GG","w_bonus"]}\"
         }}
         .GG .team__logo {{
             background-color: {df_team.loc["GG","color"]}
@@ -172,7 +172,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["CH","w_station_done"]}\"
         }}
         .CH .team__bonus::after {{
-            content: \"{df_team.loc["CH","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["CH","w_bonus"]}\"
         }}
         .CH .team__logo {{
             background-color: {df_team.loc["CH","color"]}
@@ -192,7 +192,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["GÖ","w_station_done"]}\"
         }}
         .GO .team__bonus::after {{
-            content: \"{df_team.loc["GÖ","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["GÖ","w_bonus"]}\"
         }}
         .GO .team__logo {{
             background-color: {df_team.loc["GÖ","color"]}
@@ -212,7 +212,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["GV","w_station_done"]}\"
         }}
         .GV .team__bonus::after {{
-            content: \"{df_team.loc["GV","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["GV","w_bonus"]}\"
         }}
         .GV .team__logo {{
             background-color: {df_team.loc["GV","color"]}
@@ -232,7 +232,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["SC","w_station_done"]}\"
         }}
         .SC .team__bonus::after {{
-            content: \"{df_team.loc["SC","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["SC","w_bonus"]}\"
         }}
         .SC .team__logo {{
             background-color: {df_team.loc["SC","color"]}
@@ -252,7 +252,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["V","w_station_done"]}\"
         }}
         .V .team__bonus::after {{
-            content: \"{df_team.loc["V","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["V","w_bonus"]}\"
         }}
         .V .team__logo {{
             background-color: {df_team.loc["V","color"]}
@@ -272,7 +272,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["MK","w_station_done"]}\"
         }}
         .MK .team__bonus::after {{
-            content: \"{df_team.loc["MK","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["MK","w_bonus"]}\"
         }}
         .MK .team__logo {{
             background-color: {df_team.loc["MK","color"]}
@@ -292,7 +292,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["SA","w_station_done"]}\"
         }}
         .SA .team__bonus::after {{
-            content: \"{df_team.loc["SA","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["SA","w_bonus"]}\"
         }}
         .SA .team__logo {{
             background-color: {df_team.loc["SA","color"]}
@@ -312,7 +312,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["P","w_station_done"]}\"
         }}
         .P .team__bonus::after {{
-            content: \"{df_team.loc["P","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["P","w_bonus"]}\"
         }}
         .P .team__logo {{
             background-color: {df_team.loc["P","color"]}
@@ -332,7 +332,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["R","w_station_done"]}\"
         }}
         .R .team__bonus::after {{
-            content: \"{df_team.loc["R","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["R","w_bonus"]}\"
         }}
         .R .team__logo {{
             background-color: {df_team.loc["R","color"]}
@@ -353,7 +353,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["HS","w_station_done"]}\"
         }}
         .HS .team__bonus::after {{
-            content: \"{df_team.loc["HS","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["HS","w_bonus"]}\"
         }}
         .HS .team__logo {{
             background-color: {df_team.loc["HS","color"]}
@@ -374,7 +374,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["CE","w_station_done"]}\"
         }}
         .CE .team__bonus::after {{
-            content: \"{df_team.loc["CE","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["CE","w_bonus"]}\"
         }}
         .CE .team__logo {{
             background-color: {df_team.loc["CE","color"]}
@@ -394,7 +394,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["PP","w_station_done"]}\"
         }}
         .PP .team__bonus::after {{
-            content: \"{df_team.loc["PP","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["PP","w_bonus"]}\"
         }}
         .PP .team__logo {{
             background-color: {df_team.loc["PP","color"]}
@@ -414,7 +414,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["HW","w_station_done"]}\"
         }}
         .HW .team__bonus::after {{
-            content: \"{df_team.loc["HW","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["HW","w_bonus"]}\"
         }}
         .HW .team__logo {{
             background-color: {df_team.loc["HW","color"]}
@@ -434,7 +434,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["K","w_station_done"]}\"
         }}
         .K .team__bonus::after {{
-            content: \"{df_team.loc["K","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["K","w_bonus"]}\"
         }}
         .K .team__logo {{
             background-color: {df_team.loc["K","color"]}
@@ -454,7 +454,7 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["CO","w_station_done"]}\"
         }}
         .CO .team__bonus::after {{
-            content: \"{df_team.loc["CO","Originelle_Zusatzpunkte"]}\"
+            content: \"{df_team.loc["CO","w_bonus"]}\"
         }}
         .CO .team__logo {{
             background-color: {df_team.loc["CO","color"]}

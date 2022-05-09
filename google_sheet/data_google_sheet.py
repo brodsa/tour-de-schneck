@@ -27,19 +27,15 @@ all_teams = df_color["Gruppe"]
 
 # teams summary
 df_team_tmp = df.groupby("Team").sum()
-df_team_tmp.sort_values(by=['Score'], inplace=True, ascending=False)
-df_team_tmp['order'] = list(range(df_team_tmp.shape[0]))
 df_team_tmp["Gruppe"] = df_team_tmp.index
 df_team_tmp= pd.merge(df_color,df_team_tmp,on=["Gruppe"],how="outer")
-df_team_tmp['order'].fillna(100,inplace=True)
 df_team_tmp["Score"].fillna(0,inplace=True)
 df_team_tmp["Originelle_Zusatzpunkte"].fillna(0,inplace=True)
-df_team_tmp["max_score"]= 10 * 13
-df_team_tmp["order"] = df_team_tmp.apply(lambda x: int(x["order"]), axis=1)
+df_team_tmp["max_score"]= 10 * 10
 df_team_tmp["Score"] = df_team_tmp.apply(lambda x: int(x["Score"]), axis=1)
 df_team_tmp["Originelle_Zusatzpunkte"] = df_team_tmp.apply(lambda x: int(x["Originelle_Zusatzpunkte"]), axis=1)
 df_team_tmp["w_score"] = df_team_tmp.apply(lambda x: str(x["Score"]) + "/" + str(x["max_score"]),axis=1)
-
+df_team_tmp["w_bonus"] = df_team_tmp.apply(lambda x: str(x["Originelle_Zusatzpunkte"]) + "/" + str(30),axis=1)
 
 df_team_station = pd.DataFrame(df['Team'].value_counts())
 df_team_station["station_max"] = 13 
@@ -54,6 +50,9 @@ df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
 df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
 df_team["w_station_done"] = df_team.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
 df_team["w_points"] = df_team["Score"] + df_team["Originelle_Zusatzpunkte"]
+df_team.sort_values(by=['w_points'], inplace=True, ascending=False)
+df_team['order'] = list(range(df_team.shape[0]))
+df_team["order"] = df_team.apply(lambda x: int(x["order"]), axis=1)
 
 df_station = pd.DataFrame(df["Station"].value_counts())
 df_station["teams_max"] = 25
