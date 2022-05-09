@@ -16,7 +16,7 @@ df_original = pd.DataFrame(list_of_dicts)
 worksheet_color = sh.worksheet("Stationsübersicht")
 color_list = worksheet_color.get_all_records()
 color_df = pd.DataFrame(color_list)
-stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:13]
+stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:10]
 stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
@@ -53,10 +53,10 @@ df_team["station_done"].fillna(0,inplace=True)
 df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
 df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
 df_team["w_station_done"] = df_team.apply(lambda x: str(x["station_done"]) + '/' + str( x["station_max"]),axis=1)
-
+df_team["w_points"] = df_team["Score"] + df_team["Originelle_Zusatzpunkte"]
 
 df_station = pd.DataFrame(df["Station"].value_counts())
-df_station["teams_max"] = len(df['Team'].unique())
+df_station["teams_max"] = 25
 df_station["teams_done"] = df_station["Station"]
 df_station["Station"] = df_station.index 
 df_station = pd.merge(df_station,stations_df,on="Station", how="outer")
@@ -68,6 +68,8 @@ df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '
 
 df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
 df_station.index = df_station["station"]
+
+print(df_team["w_points"])
 
 
 # Example to display

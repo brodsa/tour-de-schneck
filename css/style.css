@@ -11,6 +11,25 @@
     margin: 0;
 }
 
+h2{
+    font-family: 'Water Brush', cursive;
+    font-size: 36px;
+    color:white
+}
+
+/* h2::after,
+h2::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+	width: 50px;
+    background-color:var(--color-primary);
+    margin-bottom: 0.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+} */
+
+
 .grid{
     display:grid;
     grid-template-rows: auto 350px auto auto auto;
@@ -29,7 +48,10 @@
 }
 
 .header__title{
-    font-size: 26px;
+    font-size: 50px;
+    font-family: 'Water Brush', cursive;
+    padding: 0;
+    margin:0;
 }
 
 .header__title,
@@ -103,25 +125,23 @@
     padding: 0;
 }
 
-.hero__text > :last-child{
-    display: none;
-}
 
 .section{
     padding-top:100px;
     padding-bottom: 100px;
 }
+.section__header{
+    padding-bottom: 40px;
+    padding-top: 80px;
+    background: linear-gradient(to bottom, var(--color-primary),white)
+}
 
 .section__title{
     margin:0 ;
     padding:0;
-    margin-bottom: 40px;
     text-align: center;
 }
 
-.section__stations{
-    background-color:var(--color-tertiary);
-}
 
 .map{
     display:none;
@@ -253,7 +273,7 @@
     }
 
     .header__title{
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .header__subtitle{
@@ -353,6 +373,7 @@
 
     .header__title{
         display: inline;
+        font-size: 50px;
     }
 
     .menu{

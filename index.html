@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_station.css">
     <link rel="stylesheet" href="css/style_teams.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+
     <title>Tour de Schneck</title>
 </head>
 <body>
@@ -16,10 +23,9 @@
         <header class="header">
 
             <div class="header__logo">
-                <h1 class="header__title">ANNA</h1>
-                <h1 class="header__title"> & </h1>
-                <h1 class="header__title">LORENZ</h1>
-                <p class="header__subtitle">21. Mai 2022 - Reichenau an der Rax</p>
+                <h1 class="header__title">Anna & Lorenz</h1>
+                <!-- <h1 class="header__title"> & </h1>
+                <h1 class="header__title">Lorenz</h1> -->
             </div>
             
             <nav class="menu">
@@ -38,9 +44,21 @@
             </div>
         </section>
 
+        <section class="section section__info" id="id_info">
+
+            <div class="section__header">
+                <h2 class="section__title">Wichtige Info</h2>
+            </div>
+
+
+        </section>
+
 
         <section class="section section__stations" id="id_stations">
-            <h2 class="section__title">Stationen</h2>
+            
+            <div class="section__header">
+                <h2 class="section__title">Stationen</h2>
+            </div>
 
             <div class="map">
                 <img class="map__img" src="img/stations_map.png" alt="">
@@ -77,13 +95,12 @@
 
 
                 <div class="station C">
-                    <svg class="station__logo" widht="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M413.8 447.1L256 448l0 31.99C256 497.7 241.8 512 224.1 512c-17.67 0-32.1-14.32-32.1-31.99l0-31.99l-158.9-.0099c-28.5 0-43.69-34.49-24.69-56.4l68.98-79.59H62.22c-25.41 0-39.15-29.8-22.67-49.13l60.41-70.85H89.21c-21.28 0-32.87-22.5-19.28-37.31l134.8-146.5c10.4-11.3 28.22-11.3 38.62-.0033l134.9 146.5c13.62 14.81 2.001 37.31-19.28 37.31h-10.77l60.35 70.86c16.46 19.34 2.716 49.12-22.68 49.12h-15.2l68.98 79.59C458.7 413.7 443.1 447.1 413.8 447.1z"/>
-                    </svg>
+                    <svg class="station__logo" widht="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
                     <div class="station__text">                    
                         <h3 class="station__name">Station C</h3>
                         <table class="station__info">
-                            <tr><td><p class="station__desc">Alpinstation oder Baumklettern</p></td></tr>
+                            <tr><td><p class="station__desc">Alpinstation</p></td></tr>
                             <tr><td><p class="station__teams">Teams: </p></td></tr>
                         </table>  
                     </div> 
@@ -119,17 +136,17 @@
 
 
                 <div class="station F">
-                    <svg class="station__logo" widht="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path d="M16 319.1C16 245.9 118.3 89.43 166.9 19.3C179.2 1.585 204.8 1.585 217.1 19.3C265.7 89.43 368 245.9 368 319.1C368 417.2 289.2 496 192 496C94.8 496 16 417.2 16 319.1zM112 319.1C112 311.2 104.8 303.1 96 303.1C87.16 303.1 80 311.2 80 319.1C80 381.9 130.1 432 192 432C200.8 432 208 424.8 208 416C208 407.2 200.8 400 192 400C147.8 400 112 364.2 112 319.1z"/>
-                    </svg>
-                    <div class="station__text">                    
-                        <h3 class="station__name">Station F</h3>
-                        <table class="station__info">
-                            <tr><td><p class="station__desc">Wiener Wasser</p></td></tr>
-                            <tr><td><p class="station__teams">Teams: </p></td></tr>
-                        </table>  
-                    </div> 
-                </div>
+                    <svg class="station__logo" widht="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"/>
+                        </svg>
+                        <div class="station__text">                    
+                            <h3 class="station__name">Station F</h3>
+                            <table class="station__info">
+                                <tr><td><p class="station__desc">Gemüse schneiden</p></td></tr>
+                                <tr><td><p class="station__teams">Teams: </p></td></tr>
+                            </table>  
+                        </div> 
+                    </div>
 
 
                 <div class="station G">
@@ -180,34 +197,7 @@
                     <div class="station__text">                    
                         <h3 class="station__name">Station J</h3>
                         <table class="station__info">
-                            <tr><td><p class="station__desc">Schlussspiel Tauziehen</p></td></tr>
-                            <tr><td><p class="station__teams">Teams: </p></td></tr>
-                        </table>  
-                    </div> 
-                </div>
-
-                <div class="station K">
-                    <svg class="station__logo" widht="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                        <path d="M336 96C362.5 96 384 74.5 384 48S362.5 0 336 0S288 21.5 288 48S309.5 96 336 96zM552 416c-13.25 0-24 10.75-24 24s-10.75 24-24 24h-69.5L460 285.6c11.75-4.75 20.04-16.31 20.04-29.69c0-17.75-14.38-31.95-32.01-31.95l-43.9-.0393l-26.11-53.22c-12.5-25.5-35.5-44.12-61.75-50.87l-71.22-21.15c-7.475-1.819-15.08-2.693-22.59-2.693c-20.86 0-41.25 6.854-58.16 19.72L124.6 146.2C116.3 152.5 111.1 161.1 111.1 171.6c0 14.71 8.712 21.23 9.031 21.6L66.88 464H24C10.75 464 0 474.8 0 488S10.75 512 24 512h480c39.75 0 72-32.25 72-72C576 426.8 565.3 416 552 416zM291.6 463.9H194.7l43.1-90.97l-21.99-12.1c-12.13-7.25-21.99-16.89-29.49-27.77l-62.48 131.7L99.5 464l52.25-261.4c4.125-1 8.112-2.846 11.74-5.596l39.81-30.45c5.821-4.485 12.86-6.771 19.38-6.771c2.021 0 4.015 .212 5.878 .6556l14.73 4.383L205.8 252.2C202.3 260.3 200.7 268.9 200.7 277.3c0 22.06 11.42 43.37 31.41 55.22l84.97 50.15L291.6 463.9zM402.1 464l-43.58-.125l23.6-75.48c1.221-4.314 1.805-8.69 1.805-13.03c0-16.53-8.558-32.43-23.41-41.34l-61.21-36.1l31.32-78.23l20.26 41.36c8 16.25 24.86 26.89 43.11 26.89L427.3 288L402.1 464z"/>
-                    </svg>
-                    <div class="station__text">                    
-                        <h3 class="station__name">Station K</h3>
-                        <table class="station__info">
-                            <tr><td><p class="station__desc">"Schirennen"</p></td></tr>
-                            <tr><td><p class="station__teams">Teams: </p></td></tr>
-                        </table>  
-                    </div> 
-                </div>
-
-
-                <div class="station L">
-                    <svg class="station__logo" widht="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"/>
-                    </svg>
-                    <div class="station__text">                    
-                        <h3 class="station__name">Station L</h3>
-                        <table class="station__info">
-                            <tr><td><p class="station__desc">Gemüse schneiden</p></td></tr>
+                            <tr><td><p class="station__desc">Tauziehen & Schirennen</p></td></tr>
                             <tr><td><p class="station__teams">Teams: </p></td></tr>
                         </table>  
                     </div> 
@@ -219,7 +209,9 @@
         </section>
 
         <section class="section section__teams" id="id_teams">
-            <h2 class="section__title">Teams</h2>
+            <div class="section__header">
+                <h2 class="section__title">Teams</h2>
+            </div>
 
                 <div class="teams">
 
@@ -227,13 +219,10 @@
                         <h1 class="team__logo">GL</h1>
                         <h3 class="team_name">Glockturm</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -241,13 +230,10 @@
                         <h1 class="team__logo">O</h1>
                         <h3 class="team_name">Ortler</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -255,13 +241,10 @@
                         <h1 class="team__logo">Z</h1>
                         <h3 class="team_name">Zufallspitze</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -269,13 +252,10 @@
                         <h1 class="team__logo">M</h1>
                         <h3 class="team_name">Mönch</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -283,13 +263,10 @@
                         <h1 class="team__logo">DS</h1>
                         <h3 class="team_name">Dachstein</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -297,13 +274,10 @@
                         <h1 class="team__logo">DU</h1>
                         <h3 class="team_name">Dufourspitze</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -311,13 +285,10 @@
                         <h1 class="team__logo">ÖT</h1>
                         <h3 class="team_name">Ötscher</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -325,13 +296,10 @@
                         <h1 class="team__logo">GG</h1>
                         <h3 class="team_name">Großglockner</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -339,13 +307,10 @@
                         <h1 class="team__logo">CH</h1>
                         <h3 class="team_name">Chachani</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -353,13 +318,10 @@
                         <h1 class="team__logo">GÖ</h1>
                         <h3 class="team_name">Göller</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -367,13 +329,10 @@
                         <h1 class="team__logo">GV</h1>
                         <h3 class="team_name">Großvenediger</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -381,13 +340,10 @@
                         <h1 class="team__logo">SC</h1>
                         <h3 class="team_name">Schneeberg</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -395,13 +351,10 @@
                         <h1 class="team__logo">V</h1>
                         <h3 class="team_name">Vallunaraju</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -409,13 +362,10 @@
                         <h1 class="team__logo">MK</h1>
                         <h3 class="team_name">Mittagskogel</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -423,13 +373,10 @@
                         <h1 class="team__logo">SA</h1>
                         <h3 class="team_name">Schneealpe</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -437,13 +384,10 @@
                         <h1 class="team__logo">P</h1>
                         <h3 class="team_name">Pisco</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -451,13 +395,10 @@
                         <h1 class="team__logo">R</h1>
                         <h3 class="team_name">Rax</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -465,13 +406,10 @@
                         <h1 class="team__logo">HS</h1>
                         <h3 class="team_name">Hochschwab</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -479,13 +417,10 @@
                         <h1 class="team__logo">CE</h1>
                         <h3 class="team_name">Cevedale</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -493,13 +428,10 @@
                         <h1 class="team__logo">HW</h1>
                         <h3 class="team_name">Hohe Wand</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -508,13 +440,10 @@
                         <h1 class="team__logo">K</h1>
                         <h3 class="team_name">Kreuzeck</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
 
@@ -523,27 +452,21 @@
                         <h1 class="team__logo">PP</h1>
                         <h3 class="team_name">Piz Palü</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
-                        </table>
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
+                         </table>
                     </div>
 
-                    <div class="team C">
-                        <h1 class="team__logo">C</h1>
+                    <div class="team CO">
+                        <h1 class="team__logo">CO</h1>
                         <h3 class="team_name">Cobenzel</h3>
                         <table class="team__results">
-                            <tr>
-                                <td><p class="team__info team__points">Gesamte Punkte: </p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="team__info team__stations">Stationen: </p></td>
-                            </tr>
-                            <tr><td><p class="team__info team__additional-points">Bonuspunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__score">Score: </p></td></tr>
+                            <tr><td><p class="team__info team__bonus">Bonus: </p></td></tr> 
+                            <tr><td><p class="team__info team__all-points">Gesamtpunkte: </p></td></tr> 
+                            <tr><td><p class="team__info team__stations">Stationen: </p></td></tr>
                         </table>
                     </div>
             
@@ -555,7 +478,9 @@
 
         <section class="section section__results" id="id_results">
             
-            <h2 class="section__title">Ergebnisse</h2>
+            <div class="section__header">
+                <h2 class="section__title">Ergebnisse</h2>
+            </div>
 
             <div class="map">
                 <img class="map__img" src="img/Score.png" alt="">
