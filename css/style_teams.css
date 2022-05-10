@@ -1,214 +1,214 @@
 
         .GL .team__score::after {
-            content: "20/100"
+            content: "21/100"
         }
         .GL .team__stations::after {
             content: "5/10"
         }
         .GL .team__bonus::after {
-            content: "7/30"
+            content: "8/30"
         }
         .GL .team__logo {
             background-color: #bde0fe
         }
         .GL {
-            order: 18
+            order: 14
         }
         .GL .team__all-points::after{
-            content: "27"
+            content: "29"
         }
         
         .O .team__score::after {
-            content: "21/100"
+            content: "17/100"
         }
         .O .team__stations::after {
             content: "5/10"
         }
         .O .team__bonus::after {
-            content: "11/30"
+            content: "5/30"
         }
         .O .team__logo {
             background-color: #daeaf6
         }
         .O {
-            order: 14
+            order: 17
         }
         .O .team__all-points::after{ 
-            content: " 32"
+            content: " 22"
         }
 
 
         .Z .team__score::after {
-            content: "30/100"
+            content: "9/100"
         }
         .Z .team__stations::after {
             content: "5/10"
         }
         .Z .team__bonus::after {
-            content: "8/30"
+            content: "13/30"
         }
         .Z .team__logo {
             background-color: #9bd0b7
         }
         .Z {
-            order: 7
+            order: 16
         }
         .Z .team__all-points::after{
-            content: "38"
+            content: "22"
         }
 
 
 
         .M .team__score::after {
-            content: "22/100"
+            content: "14/100"
         }
         .M .team__stations::after {
             content: "5/10"
         }
         .M .team__bonus::after {
-            content: "10/30"
+            content: "7/30"
         }
         .M .team__logo {
             background-color: #c23a22
         }
         .M {
-            order: 16
+            order: 19
         }
         .M .team__all-points::after{
-            content: "32 "
+            content: "21 "
         }
 
 
         .DS .team__score::after {
-            content: "29/100"
+            content: "33/100"
         }
         .DS .team__stations::after {
             content: "5/10"
         }
         .DS .team__bonus::after {
-            content: "7/30"
+            content: "6/30"
         }
         .DS .team__logo {
             background-color: #dab894
         }
         .DS {
-            order: 8
+            order: 4
         }
         .DS .team__all-points::after{
-            content: "36"
+            content: "39"
         }
         
 
         .DU .team__score::after {
-            content: "40/100"
+            content: "30/100"
         }
         .DU .team__stations::after {
             content: "5/10"
         }
         .DU .team__bonus::after {
-            content: "11/30"
+            content: "8/30"
         }
         .DU .team__logo {
             background-color: #d6eadf
         }
         .DU {
-            order: 1
+            order: 5
         }
         .DU .team__all-points::after{
-            content: "51"
+            content: "38"
         }
 
 
 
         .OT .team__score::after {
-            content: "29/100"
+            content: "41/100"
         }
         .OT .team__stations::after {
             content: "5/10"
         }
         .OT .team__bonus::after {
-            content: "10/30"
+            content: "7/30"
         }
         .OT .team__logo {
             background-color: #957DAD
         }
         .OT {
-            order: 5
+            order: 1
         }
         .OT .team__all-points::after{
-            content: " 39"
+            content: " 48"
         }
 
 
 
         .GG .team__score::after {
-            content: "29/100"
+            content: "28/100"
         }
         .GG .team__stations::after {
             content: "5/10"
         }
         .GG .team__bonus::after {
-            content: "11/30"
+            content: "9/30"
         }
         .GG .team__logo {
             background-color: #E0BBE4
         }
         .GG {
-            order: 4
+            order: 6
         }
         .GG .team__all-points::after{
-             content: "40"
+             content: "37"
         }
 
 
         .CH .team__score::after {
-            content: "29/100"
+            content: "13/100"
         }
         .CH .team__stations::after {
             content: "5/10"
         }
         .CH .team__bonus::after {
-            content: "7/30"
+            content: "9/30"
         }
         .CH .team__logo {
             background-color: #d291bc
         }
         .CH {
-            order: 9
+            order: 18
         }
         .CH .team__all-points::after{
-            content: "36"
+            content: "22"
         }
 
 
         .GO .team__score::after {
-            content: "28/100"
+            content: "30/100"
         }
         .GO .team__stations::after {
             content: "5/10"
         }
         .GO .team__bonus::after {
-            content: "5/30"
+            content: "6/30"
         }
         .GO .team__logo {
             background-color: #c2d5a8
         }
         .GO {
-            order: 12
+            order: 9
         }
         .GO .team__all-points::after{
-            content: "33"
+            content: "36"
         }
 
 
         .GV .team__score::after {
-            content: "40/100"
+            content: "45/100"
         }
         .GV .team__stations::after {
             content: "6/10"
         }
         .GV .team__bonus::after {
-            content: "12/30"
+            content: "7/30"
         }
         .GV .team__logo {
             background-color: #ffdfdc
@@ -222,7 +222,7 @@
 
 
         .SC .team__score::after {
-            content: "26/100"
+            content: "34/100"
         }
         .SC .team__stations::after {
             content: "5/10"
@@ -234,163 +234,163 @@
             background-color: #9d8189
         }
         .SC {
-            order: 13
+            order: 3
         }
         .SC .team__all-points::after{
-            content: "32"
+            content: "40"
         }
 
 
         .V .team__score::after {
-            content: "31/100"
+            content: "21/100"
         }
         .V .team__stations::after {
             content: "5/10"
         }
         .V .team__bonus::after {
-            content: "9/30"
+            content: "8/30"
         }
         .V .team__logo {
             background-color: #cccccc
         }
         .V {
-            order: 3
+            order: 13
         }
         .V .team__all-points::after{
-            content: "40"
+            content: "29"
         }
 
 
         .MK .team__score::after {
-            content: "26/100"
+            content: "30/100"
         }
         .MK .team__stations::after {
             content: "5/10"
         }
         .MK .team__bonus::after {
-            content: "9/30"
+            content: "7/30"
         }
         .MK .team__logo {
             background-color: #9cadce
         }
         .MK {
-            order: 10
+            order: 7
         }
         .MK .team__all-points::after{
-            content: "35"
+            content: "37"
         }
 
 
         .SA .team__score::after {
-            content: "23/100"
+            content: "18/100"
         }
         .SA .team__stations::after {
             content: "5/10"
         }
         .SA .team__bonus::after {
-            content: "8/30"
+            content: "7/30"
         }
         .SA .team__logo {
             background-color: #a2d2ff
         }
         .SA {
-            order: 17
+            order: 15
         }
         .SA .team__all-points::after{
-            content: "31"
+            content: "25"
         }
         
 
         .P .team__score::after {
-            content: "29/100"
+            content: "31/100"
         }
         .P .team__stations::after {
             content: "5/10"
         }
         .P .team__bonus::after {
-            content: "3/30"
+            content: "5/30"
         }
         .P .team__logo {
             background-color: #5d5b6a
         }
         .P {
-            order: 15
+            order: 10
         }
         .P .team__all-points::after{
-            content: "32"
+            content: "36"
         }
 
 
         .R .team__score::after {
-            content: "31/100"
+            content: "37/100"
         }
         .R .team__stations::after {
             content: "5/10"
         }
         .R .team__bonus::after {
-            content: "7/30"
+            content: "8/30"
         }
         .R .team__logo {
             background-color: #ffafcc
         }
         .R {
-            order: 6
+            order: 2
         }
         .R .team__all-points::after{
-            content: "38"
+            content: "45"
         }
 
 
 
         .HS .team__score::after {
-            content: "33/100"
+            content: "23/100"
         }
         .HS .team__stations::after {
             content: "5/10"
         }
         .HS .team__bonus::after {
-            content: "8/30"
+            content: "9/30"
         }
         .HS .team__logo {
             background-color: #efe9ae
         }
         .HS {
-            order: 2
+            order: 12
         }
         .HS .team__all-points::after{
-            content: "41"
+            content: "32"
         }
 
         
 
         .CE .team__score::after {
-            content: "20/100"
+            content: "32/100"
         }
         .CE .team__stations::after {
             content: "5/10"
         }
         .CE .team__bonus::after {
-            content: "2/30"
+            content: "5/30"
         }
         .CE .team__logo {
             background-color: #ff928b
         }
         .CE {
-            order: 19
+            order: 8
         }
         .CE .team__all-points::after{
-            content: "22"
+            content: "37"
         }
 
 
         .PP .team__score::after {
-            content: "0/100"
+            content: "8/100"
         }
         .PP .team__stations::after {
-            content: "0/13"
+            content: "1/10"
         }
         .PP .team__bonus::after {
-            content: "0/30"
+            content: "2/30"
         }
         .PP .team__logo {
             background-color: #7ec4cf
@@ -399,7 +399,7 @@
             order: 20
         }
         .PP .team__all-points::after{
-            content: "0"
+            content: "10"
         }
 
         
