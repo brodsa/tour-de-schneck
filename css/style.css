@@ -7,8 +7,12 @@
     --gray:rgb(219, 213, 213);
 }
 
-.body{
+body{
     margin: 0;
+}
+
+.glide__slide img{
+    width: 100%;
 }
 
 h2{

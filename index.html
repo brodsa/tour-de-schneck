@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_station.css">
     <link rel="stylesheet" href="css/style_teams.css">
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/css/glide.core.min.css">
+    <link rel="stylesheet" href="plugins/css/glide.theme.min.css">
 
     <title>Tour de Schneck</title>
 </head>
@@ -26,8 +29,6 @@
 
             <div class="header__logo">
                 <a href="/"><h1 class="header__title">Anna & Lorenz</h1></a>
-                <!-- <h1 class="header__title"> & </h1>
-                <h1 class="header__title">Lorenz</h1> -->
             </div>
             
             <nav class="menu">
@@ -57,6 +58,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam laborum ipsa, saepe cupiditate sed ullam tempore doloribus aperiam nobis deserunt eius, inventore quas in et illum ab optio blanditiis ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae omnis veniam velit autem repellat natus, quis, sed itaque laborum deserunt quibusdam explicabo minima praesentium minus aliquam vitae quaerat atque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ducimus nulla cum consectetur laborum architecto laboriosam esse, corrupti, quas quisquam quod consequatur libero quam adipisci minima culpa, doloremque cupiditate autem.
                     </p>
                 </div>
+            </div> 
         </section>
 
 
@@ -66,9 +68,19 @@
                 <h2 class="section__title">Stationen</h2>
             </div>
 
-            <div class="map">
-                <img class="map__img" src="img/stations_map.png" alt="">
-            </div>
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="img/stations_map.png" alt=""></li>
+                    <li class="glide__slide"><img src="img/stations_map.png" alt=""></li>
+                    <li class="glide__slide"><img src="img/stations_map.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+
+             
+
 
             <div class="stations">
 
@@ -509,5 +521,13 @@
 
     </div>
 
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
+
+    <script>
+    new Glide('.glide').mount()
+    </script>
+
 </body>
+
 </html>
