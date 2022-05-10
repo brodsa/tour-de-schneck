@@ -1,0 +1,42 @@
+
+        .A .station__teams::after {
+            content: "11/25"
+        }
+        
+        .B .station__teams::after {
+            content: "10/25"
+        }
+
+        .C .station__teams::after {
+            content: "20/25"
+        }
+
+        .D .station__teams::after {
+            content: "20/25"
+        }
+
+        .E .station__teams::after {
+            content: "10/25"
+        }
+
+        .F .station__teams::after {
+            content: "11/25"
+        }
+
+        .G .station__teams::after {
+            content: "11/25"
+        }
+
+        .H .station__teams::after {
+            content: "10/25"
+        }
+
+        .I .station__teams::after {
+            content: "0/20"
+        }
+
+        .J .station__teams::after {
+            content: "0/20"
+        }
+
+        

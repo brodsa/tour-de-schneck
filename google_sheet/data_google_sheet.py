@@ -53,6 +53,7 @@ df_team["w_points"] = df_team["Score"] + df_team["Originelle_Zusatzpunkte"]
 df_team.sort_values(by=['w_points'], inplace=True, ascending=False)
 df_team['order'] = list(range(df_team.shape[0]))
 df_team["order"] = df_team.apply(lambda x: int(x["order"]), axis=1)
+print(df_team.loc["K","w_score"])
 
 df_station = pd.DataFrame(df["Station"].value_counts())
 df_station["teams_max"] = 25
@@ -67,8 +68,6 @@ df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '
 
 df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
 df_station.index = df_station["station"]
-
-print(df_team["w_points"])
 
 
 # Example to display

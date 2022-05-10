@@ -44,14 +44,6 @@ with open("./css/style_station.css", "w") as f_station:
             content: \"{df_station.loc["J","w_teams_done"]}\"
         }}
 
-        .K .station__teams::after {{
-            content: \"{df_station.loc["K","w_teams_done"]}\"
-        }}
-
-        .L .station__teams::after {{
-            content: \"{df_station.loc["L","w_teams_done"]}\"
-        }}
-
         """ )
 
 print("Python: style_station.css compiled")
