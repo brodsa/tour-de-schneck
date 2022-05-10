@@ -38,7 +38,7 @@ df_team_tmp["w_score"] = df_team_tmp.apply(lambda x: str(x["Score"]) + "/" + str
 df_team_tmp["w_bonus"] = df_team_tmp.apply(lambda x: str(x["Originelle_Zusatzpunkte"]) + "/" + str(30),axis=1)
 
 df_team_station = pd.DataFrame(df['Team'].value_counts())
-df_team_station["station_max"] = 13 
+df_team_station["station_max"] = 10 
 df_team_station["station_done"] = df_team_station["Team"] 
 df_team_station["Gruppe"] = df_team_station.index
 
