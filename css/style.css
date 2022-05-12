@@ -318,11 +318,6 @@ footer p{
         padding-right: 30px;
     }
 
-    .header{
-        position:static;
-        max-width: 95%;
-    }
-
     .header__title{
         font-size: 30px;
     }
@@ -411,15 +406,12 @@ footer p{
 
 
 @media screen and (min-width:960px) {
-    .grid{
-        grid-template-rows: auto 550px repeat(4, auto) 100px;
-    }
 
     .header{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        margin:20px 40px;
+        /* margin:20px 40px; */
     }
 
     .header__title{
@@ -437,6 +429,7 @@ footer p{
     }
 
     .hero{
+        height: 400px;
         background-position: center;
     }
 
