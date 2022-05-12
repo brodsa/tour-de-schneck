@@ -34,9 +34,9 @@ from data_google_sheet import df_team
 
 
 
-df_plot = df_team[["Originelle_Zusatzpunkte","w_points"]]
+df_plot = df_team[["w_points","Originelle_Zusatzpunkte","Score"]]
 df_plot.reset_index(inplace=True)
-df_plot.columns = [ "Team","Bonus","Score",]
+df_plot.columns = [ "Team","Gesamt","Bonus","Score"]
 #print(df_plot)
 
 # plt.figure(figsize=(20,10), dpi=200)
@@ -52,11 +52,12 @@ df_plot.columns = [ "Team","Bonus","Score",]
 
 
 plt.figure(figsize=(20,10), dpi=200)
-colors = ["#AA2C2E","gray"]
+colors = ["#AA2C2E","#D79FA0","gray"]
 sns.set_palette(sns.color_palette(colors))
-df_pl = pd.melt(df_plot,value_vars=["Score","Bonus"],id_vars="Team")
+df_pl = pd.melt(df_plot,value_vars=["Gesamt","Score","Bonus"],id_vars="Team")
 df_pl.columns = [ "Teams","Punkte","Anzahl"]
 print(df_pl)
+print(df_plot.dtypes)
 sns.barplot(x ="Teams", y = 'Anzahl', data = df_pl, hue = "Punkte")
 plt.legend(ncol=2, loc="upper right", frameon=True,fontsize=20)
 plt.xticks(fontsize= 18)
