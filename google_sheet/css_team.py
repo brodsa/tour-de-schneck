@@ -466,6 +466,105 @@ with open("./css/style_teams.css", "w") as f_team:
             content: \"{df_team.loc["CO","w_points"]}\"
         }}
 
+
+        .HV .team__score::after {{
+            content: \"{df_team.loc["HV","w_score"]}\"
+        }}
+        .HV .team__stations::after {{
+            content: \"{df_team.loc["HV","w_station_done"]}\"
+        }}
+        .HV .team__bonus::after {{
+            content: \"{df_team.loc["HV","w_bonus"]}\"
+        }}
+        .HV .team__logo {{
+            background-color: {df_team.loc["HV","color"]}
+        }}
+        .HV {{
+            order: {df_team.loc["HV","order"]}
+        }}
+        .HV .team__all-points::after{{
+            content: \"{df_team.loc["HV","w_points"]}\"
+        }}
+
+
+        .BR .team__score::after {{
+            content: \"{df_team.loc["BR","w_score"]}\"
+        }}
+        .BR .team__stations::after {{
+            content: \"{df_team.loc["BR","w_station_done"]}\"
+        }}
+        .BR .team__bonus::after {{
+            content: \"{df_team.loc["BR","w_bonus"]}\"
+        }}
+        .BR .team__logo {{
+            background-color: {df_team.loc["BR","color"]}
+        }}
+        .BR {{
+            order: {df_team.loc["BR","order"]}
+        }}
+        .BR .team__all-points::after{{
+            content: \"{df_team.loc["BR","w_points"]}\"
+        }}
+
+
+        .CA .team__score::after {{
+            content: \"{df_team.loc["CA","w_score"]}\"
+        }}
+        .CA .team__stations::after {{
+            content: \"{df_team.loc["CA","w_station_done"]}\"
+        }}
+        .CA .team__bonus::after {{
+            content: \"{df_team.loc["CA","w_bonus"]}\"
+        }}
+        .CA .team__logo {{
+            background-color: {df_team.loc["CA","color"]}
+        }}
+        .CA {{
+            order: {df_team.loc["CA","order"]}
+        }}
+        .CA .team__all-points::after{{
+            content: \"{df_team.loc["CA","w_points"]}\"
+        }}
+
+        .SP .team__score::after {{
+            content: \"{df_team.loc["SP","w_score"]}\"
+        }}
+        .SP .team__stations::after {{
+            content: \"{df_team.loc["SP","w_station_done"]}\"
+        }}
+        .SP .team__bonus::after {{
+            content: \"{df_team.loc["SP","w_bonus"]}\"
+        }}
+        .SP .team__logo {{
+            background-color: {df_team.loc["SP","color"]}
+        }}
+        .SP {{
+            order: {df_team.loc["SP","order"]}
+        }}
+        .SP .team__all-points::after{{
+            content: \"{df_team.loc["SP","w_points"]}\"
+        }}
+
+
+        .HO .team__score::after {{
+            content: \"{df_team.loc["HO","w_score"]}\"
+        }}
+        .HO .team__stations::after {{
+            content: \"{df_team.loc["HO","w_station_done"]}\"
+        }}
+        .HO .team__bonus::after {{
+            content: \"{df_team.loc["HO","w_bonus"]}\"
+        }}
+        .HO .team__logo {{
+            background-color: {df_team.loc["HO","color"]}
+        }}
+        .HO {{
+            order: {df_team.loc["HO","order"]}
+        }}
+        .HO .team__all-points::after{{
+            content: \"{df_team.loc["HO","w_points"]}\"
+        }}
+
         
         """ )
 
