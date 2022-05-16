@@ -16,7 +16,7 @@ body{
 
 
 h2{
-    font-family: 'Water Brush', cursive;
+    font-family: 'Caveat Brush', cursive;
     font-size: 40px;
     color:var(--color-primary);
 }
@@ -39,16 +39,27 @@ h3{
 
 
 .header{
-    position:fixed;
+    /* position:fixed;
     width: 100%;
     background-color: var(--white);
-    color: var(--color-primary);
+    color: var(--color-primary); */
+
+    background-image:url("../img/19385.jpg");
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    position:sticky;
+    z-index: -1;
+
+    
 }
 
 .header__logo{
     margin: 10px;
     text-align: center;
     display: block;
+    background: linear-gradient(to top,rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.6));
 }
 
 .header__logo a {
@@ -57,7 +68,7 @@ h3{
 
 .header__title{
     font-size: 50px;
-    font-family: 'Water Brush', cursive;
+    font-family: 'Caveat Brush', cursive;
     padding: 0;
     margin:0 auto;
     text-decoration: none;
@@ -174,6 +185,18 @@ footer p{
     padding: 0 50px 20px 50px;
 }
 
+.section__stripe{
+    height: 70px;
+    background-image:url("../img/19385.jpg");
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    position:sticky;
+    z-index: -1;
+    
+}
+
 .info__text{
     text-align: center;
     padding: 20px 50px 0 50px;
@@ -207,7 +230,7 @@ footer p{
     border-radius: 10px;
 	margin: 20px 20px 0px 20px;
 	padding: 35px 0 20px 0;
-    background-color: white
+    /* background-color: white */
 }
 
 .station__logo{
@@ -266,7 +289,7 @@ footer p{
 	border-radius: 50%;
     color: var(--white);
     border: 2px solid white;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Caveat Brush', cursive;
     font-style: normal;
     box-shadow: 0 10px 50px -2px gray, 0 -10px 50px -2px gray;
 
@@ -409,6 +432,8 @@ footer p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .station{
@@ -420,7 +445,7 @@ footer p{
 }
 
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1200px) {
 
 
     .header{
@@ -445,8 +470,8 @@ footer p{
     }
 
     .hero{
-        height: 900px;
-        background-position: 50% 35%;
+        height: 700px;
+        background-position: 50% 40%;
     }
 
 
@@ -502,6 +527,7 @@ footer p{
         width:100%;
         z-index:-1;
         margin-bottom: 50px;
+        display:none;
 
     }
       
