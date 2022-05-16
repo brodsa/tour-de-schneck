@@ -49,8 +49,8 @@ h3{
     background-position: center;
     background-repeat:repeat;
     background-attachment: fixed;
-    /* position:sticky;
-    z-index: -1; */
+    position:sticky;
+    z-index: -1; 
 
     
 }

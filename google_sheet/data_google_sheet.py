@@ -21,10 +21,7 @@ stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
 df_tmp = df_original.groupby(["Team", "Station"]).last().reset_index()
-print(df_tmp)
-
-
-df = df_original[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
+df = df_tmp[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
 df_color = color_df[["Gruppennamen","short","color"]].dropna().iloc[0:28]
 df_color["Gruppe"] = df_color["Gruppennamen"]
 all_teams = df_color["Gruppe"]
