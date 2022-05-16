@@ -20,6 +20,10 @@ stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:10]
 stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
+df_tmp = df_original.groupby(["Team", "Station"]).last().reset_index()
+print(df_tmp)
+
+
 df = df_original[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
 df_color = color_df[["Gruppennamen","short","color"]].dropna().iloc[0:28]
 df_color["Gruppe"] = df_color["Gruppennamen"]
