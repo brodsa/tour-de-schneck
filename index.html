@@ -17,10 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Tour de Schneck</title>
 </head>
 <body>
+
 
     <div class="grid">
 
@@ -52,9 +54,11 @@
         <section class="section section__info" id="id_info">
 
             <div class="section__header">
-                <h2 class="section__title">Wichtige Info</h2>
+                <div data-aos="flip-left">
+                    <h2 class="section__title" >Wichtige Info</h2>
+                </div>
 
-                <div class="info">
+                <div class="info" data-aos="fade-up">
                     <p class="info__text"> Ihr Mutigen :)</p>
                     <p class="info__text"> Ihr stellt Euch der Herausforderung eine Rätselrallye quer durch Reichenau und Umgebung zu bestreiten! Wir haben uns besondere Schmankerl einfallen lassen, sodass für jeden etwas dabei sein wird :). Wir wünschen Euch viel Spaß, gebt Gas und wir sind sehr gespannt, welches Team das Punkterennen gewinnen wird :D </p>
 
@@ -80,7 +84,7 @@
 
         <section class="section section__stations" id="id_stations">
             
-            <div class="section__header">
+            <div class="section__header" data-aos="flip-left">
                 <h2 class="section__title">Stationen</h2>
             </div>
 
@@ -166,10 +170,8 @@
                 </div>
             </div>
 
-             
-
-
-            <div class="stations">
+            
+            <div class="stations" data-aos="fade-up">
 
                 <div class="station A">
                     <svg class="station__logo" viewBox="0 0 512 512" widht="40" height="40">
@@ -327,12 +329,13 @@
         <div class="section__stripe"> </div>
 
         <section class="section section__teams" id="id_teams">
+
             <div class="section__header">
-                <h2 class="section__title">Teams</h2>
-                <p class="section__text"> Wer bekommt die Überraschungspreise denn :) ? Bleibt informiert und schaut, wie es Eurem Team und den anderen geht.</p>
+                <h2 class="section__title" data-aos="flip-left" >Teams</h2>
+                <p class="section__text" data-aos="fade-up"> Wer bekommt die Überraschungspreise denn :) ? Bleibt informiert und schaut, wie es Eurem Team und den anderen geht.</p>
             </div>
 
-                <div class="teams">
+                <div class="teams" data-aos="fade-up">
 
                     <div class="team GL" >
                         <h1 class="team__logo">GL</h1>
@@ -599,11 +602,11 @@
 
         <section class="section section__results" id="id_results">
             
-            <div class="section__header">
+            <div class="section__header" data-aos="flip-left">
                 <h2 class="section__title">Ergebnisse</h2>
             </div>
 
-            <div class="result">
+            <div class="result" data-aos="fade-up">
                 <img class="result__img" src="img/Gesamt_unstack.png" alt="">
             </div>
 
@@ -648,6 +651,11 @@
             },
         }
         );
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
