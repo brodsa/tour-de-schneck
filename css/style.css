@@ -214,13 +214,11 @@ footer p{
     padding-top: 0px;
 }
 
-.info >:last-child{
-    padding-top: 30px;
-}
 
 .button{
     border:0;
     border-radius: 20px;
+    padding: 10px 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color:white;
@@ -237,6 +235,10 @@ footer p{
     font-size: 16px;
     color:white;
 
+}
+
+.button--center{
+    margin: 0 auto;
 }
 
 .map,
