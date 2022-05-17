@@ -45,7 +45,7 @@ df_team_station["Gruppe"] = df_team_station.index
 
 df_team = pd.merge(df_team_tmp,df_team_station,on="Gruppe",how='outer')
 df_team.index = df_team["short"]
-df_team['station_max'].fillna(13,inplace=True)
+df_team['station_max'].fillna(10,inplace=True)
 df_team["station_done"].fillna(0,inplace=True)
 df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
 df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
