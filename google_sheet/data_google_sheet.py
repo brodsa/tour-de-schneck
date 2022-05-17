@@ -60,7 +60,7 @@ df_station["teams_max"] = 28
 df_station["teams_done"] = df_station["Station"]
 df_station["Station"] = df_station.index 
 df_station = pd.merge(df_station,stations_df,on="Station", how="outer")
-df_station["teams_max"].fillna(20,inplace=True)
+df_station["teams_max"].fillna(28,inplace=True)
 df_station["teams_done"].fillna(0,inplace=True)
 df_station["teams_max"] = df_station.apply(lambda x: int(x["teams_max"]), axis=1)
 df_station["teams_done"] = df_station.apply(lambda x: int(x["teams_done"]), axis=1)
