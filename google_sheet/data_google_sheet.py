@@ -16,7 +16,8 @@ df_original = pd.DataFrame(list_of_dicts)
 worksheet_color = sh.worksheet("Stationsübersicht")
 color_list = worksheet_color.get_all_records()
 color_df = pd.DataFrame(color_list)
-stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:10]
+stations_df = color_df[["Stationen","Bezeichnung"]].iloc[0:12]
+print(stations_df)
 stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
