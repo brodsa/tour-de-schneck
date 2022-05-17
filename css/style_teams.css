@@ -145,7 +145,7 @@
             content: "7/120"
         }
         .GG .team__stations::after {
-            content: "1/10"
+            content: "1/12"
         }
         .GG .team__bonus::after {
             content: "2/36"
@@ -185,7 +185,7 @@
             content: "10/120"
         }
         .GO .team__stations::after {
-            content: "1/10"
+            content: "1/12"
         }
         .GO .team__bonus::after {
             content: "3/36"
@@ -225,7 +225,7 @@
             content: "10/120"
         }
         .SC .team__stations::after {
-            content: "1/10"
+            content: "1/12"
         }
         .SC .team__bonus::after {
             content: "3/36"
@@ -407,7 +407,7 @@
             content: "4/120"
         }
         .HW .team__stations::after {
-            content: "1/10"
+            content: "1/12"
         }
         .HW .team__bonus::after {
             content: "2/36"

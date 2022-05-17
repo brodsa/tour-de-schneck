@@ -40,13 +40,13 @@ df_team_tmp["w_score"] = df_team_tmp.apply(lambda x: str(x["Score"]) + "/" + str
 df_team_tmp["w_bonus"] = df_team_tmp.apply(lambda x: str(x["Originelle_Zusatzpunkte"]) + "/" + str(3*12),axis=1)
 
 df_team_station = pd.DataFrame(df['Team'].value_counts())
-df_team_station["station_max"] = 10 
+df_team_station["station_max"] = 12 
 df_team_station["station_done"] = df_team_station["Team"] 
 df_team_station["Gruppe"] = df_team_station.index
 
 df_team = pd.merge(df_team_tmp,df_team_station,on="Gruppe",how='outer')
 df_team.index = df_team["short"]
-df_team['station_max'].fillna(10,inplace=True)
+df_team['station_max'].fillna(12,inplace=True)
 df_team["station_done"].fillna(0,inplace=True)
 df_team["station_max"] = df_team.apply(lambda x: int(x["station_max"]), axis=1)
 df_team["station_done"] = df_team.apply(lambda x: int(x["station_done"]), axis=1)
