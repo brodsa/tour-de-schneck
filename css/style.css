@@ -335,7 +335,7 @@ footer p{
     margin: 0;
 }
 
-.footer__designer{
+.footer__designers{
     font-size: 12px;
     text-align: right;
 }
@@ -643,7 +643,7 @@ footer p{
     }
     
     .footer__copyright,
-    .footer__designer{
+    .footer__designers{
         flex: 0 1 20%;
     }
 
