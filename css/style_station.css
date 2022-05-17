@@ -1,42 +1,42 @@
 
         .A .station__teams::after {
-            content: "12/25"
+            content: "12/28"
         }
         
         .B .station__teams::after {
-            content: "11/25"
+            content: "11/28"
         }
 
         .C .station__teams::after {
-            content: "20/25"
+            content: "20/28"
         }
 
         .D .station__teams::after {
-            content: "20/25"
+            content: "20/28"
         }
 
         .E .station__teams::after {
-            content: "10/25"
+            content: "10/28"
         }
 
         .F .station__teams::after {
-            content: "11/25"
+            content: "11/28"
         }
 
         .G .station__teams::after {
-            content: "13/25"
+            content: "13/28"
         }
 
         .H .station__teams::after {
-            content: "10/25"
+            content: "10/28"
         }
 
         .I .station__teams::after {
-            content: "1/25"
+            content: "1/28"
         }
 
         .J .station__teams::after {
-            content: "1/25"
+            content: "1/28"
         }
 
         

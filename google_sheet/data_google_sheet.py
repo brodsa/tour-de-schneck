@@ -56,7 +56,7 @@ df_team['order'] = list(range(df_team.shape[0]))
 df_team["order"] = df_team.apply(lambda x: int(x["order"]), axis=1)
 
 df_station = pd.DataFrame(df["Station"].value_counts())
-df_station["teams_max"] = 25
+df_station["teams_max"] = 28
 df_station["teams_done"] = df_station["Station"]
 df_station["Station"] = df_station.index 
 df_station = pd.merge(df_station,stations_df,on="Station", how="outer")
