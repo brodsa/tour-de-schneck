@@ -427,23 +427,23 @@ with open("./css/style_teams.css", "w") as f_team:
         }}
 
 
-        .K .team__score::after {{
-            content: \"{df_team.loc["K","w_score"]}\"
+        .KR .team__score::after {{
+            content: \"{df_team.loc["KR","w_score"]}\"
         }}
-        .K .team__stations::after {{
-            content: \"{df_team.loc["K","w_station_done"]}\"
+        .KR .team__stations::after {{
+            content: \"{df_team.loc["KR","w_station_done"]}\"
         }}
-        .K .team__bonus::after {{
-            content: \"{df_team.loc["K","w_bonus"]}\"
+        .KR .team__bonus::after {{
+            content: \"{df_team.loc["KR","w_bonus"]}\"
         }}
-        .K .team__logo {{
-            background-color: {df_team.loc["K","color"]}
+        .KR .team__logo {{
+            background-color: {df_team.loc["KR","color"]}
         }}
-        .K {{
-            order: {df_team.loc["K","order"]}
+        .KR {{
+            order: {df_team.loc["KR","order"]}
         }}
-        .K .team__all-points::after{{
-            content: \"{df_team.loc["K","w_points"]}\"
+        .KR .team__all-points::after{{
+            content: \"{df_team.loc["KR","w_points"]}\"
         }}
         
         
