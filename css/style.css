@@ -220,13 +220,21 @@ footer p{
 
 .button{
     border:0;
-    background-color:#AA2C2E;
     padding: 10px 20px;
     border-radius: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color:white;
     margin: 0 auto;
+}
+
+.button--primary{
+    background-color:#AA2C2E;
+}
+
+.button--center{
+    margin: 0 auto;
+    text-align: center;
 }
 
 .map,
