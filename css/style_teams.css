@@ -31,7 +31,7 @@
             background-color: #daeaf6
         }
         .O {
-            order: 2
+            order: 3
         }
         .O .team__all-points::after{ 
             content: " 36"
@@ -51,7 +51,7 @@
             background-color: #9bd0b7
         }
         .Z {
-            order: 4
+            order: 5
         }
         .Z .team__all-points::after{
             content: "35"
@@ -194,7 +194,7 @@
             background-color: #c2d5a8
         }
         .GO {
-            order: 3
+            order: 4
         }
         .GO .team__all-points::after{
             content: "35"
@@ -222,10 +222,10 @@
 
 
         .SC .team__score::after {
-            content: "28/120"
+            content: "35/120"
         }
         .SC .team__stations::after {
-            content: "4/12"
+            content: "5/12"
         }
         .SC .team__bonus::after {
             content: "7/36"
@@ -234,10 +234,10 @@
             background-color: #9d8189
         }
         .SC {
-            order: 5
+            order: 2
         }
         .SC .team__all-points::after{
-            content: "35"
+            content: "42"
         }
 
 
