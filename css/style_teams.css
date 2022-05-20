@@ -100,22 +100,22 @@
         
 
         .DU .team__score::after {
-            content: "0/120"
+            content: "9/120"
         }
         .DU .team__stations::after {
-            content: "1/12"
+            content: "2/12"
         }
         .DU .team__bonus::after {
-            content: "0/36"
+            content: "1/36"
         }
         .DU .team__logo {
             background-color: #d6eadf
         }
         .DU {
-            order: 11
+            order: 3
         }
         .DU .team__all-points::after{
-            content: "0"
+            content: "10"
         }
 
 
@@ -314,7 +314,7 @@
             background-color: #5d5b6a
         }
         .P {
-            order: 3
+            order: 4
         }
         .P .team__all-points::after{
             content: "0"
@@ -396,7 +396,7 @@
             background-color: #7ec4cf
         }
         .PP {
-            order: 10
+            order: 11
         }
         .PP .team__all-points::after{
             content: "0"
@@ -416,7 +416,7 @@
             background-color: #758184
         }
         .HW {
-            order: 8
+            order: 9
         }
         .HW .team__all-points::after{
             content: "0"
@@ -436,7 +436,7 @@
             background-color: #ff8fab
         }
         .KR {
-            order: 9
+            order: 10
         }
         .KR .team__all-points::after{
             content: "0"
@@ -456,7 +456,7 @@
             background-color: #ff6663
         }
         .CO {
-            order: 4
+            order: 5
         }
         .CO .team__all-points::after{
             content: "0"
@@ -496,7 +496,7 @@
             background-color: #e8d1c5
         }
         .BR {
-            order: 7
+            order: 8
         }
         .BR .team__all-points::after{
             content: "0"
@@ -516,7 +516,7 @@
             background-color: #ffc8dd
         }
         .CA {
-            order: 6
+            order: 7
         }
         .CA .team__all-points::after{
             content: "0"
@@ -535,7 +535,7 @@
             background-color: #f6bc66
         }
         .SP {
-            order: 5
+            order: 6
         }
         .SP .team__all-points::after{
             content: "0"
