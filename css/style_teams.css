@@ -92,7 +92,7 @@
             background-color: #dab894
         }
         .DS {
-            order: 2
+            order: 3
         }
         .DS .team__all-points::after{
             content: "12"
@@ -121,10 +121,10 @@
 
 
         .OT .team__score::after {
-            content: "9/120"
+            content: "18/120"
         }
         .OT .team__stations::after {
-            content: "2/12"
+            content: "3/12"
         }
         .OT .team__bonus::after {
             content: "2/36"
@@ -133,10 +133,10 @@
             background-color: #957DAD
         }
         .OT {
-            order: 4
+            order: 1
         }
         .OT .team__all-points::after{
-            content: " 11"
+            content: " 20"
         }
 
 
@@ -234,7 +234,7 @@
             background-color: #9d8189
         }
         .SC {
-            order: 1
+            order: 2
         }
         .SC .team__all-points::after{
             content: "13"
@@ -376,7 +376,7 @@
             background-color: #ff928b
         }
         .CE {
-            order: 3
+            order: 4
         }
         .CE .team__all-points::after{
             content: "12"
