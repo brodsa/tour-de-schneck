@@ -4,7 +4,7 @@
         }
         
         .B .station__teams::after {
-            content: "16/28"
+            content: "17/28"
         }
 
         .C .station__teams::after {
@@ -16,7 +16,7 @@
         }
 
         .E .station__teams::after {
-            content: "13/28"
+            content: "14/28"
         }
 
         .F .station__teams::after {
@@ -32,7 +32,7 @@
         }
 
         .I .station__teams::after {
-            content: "9/28"
+            content: "14/28"
         }
 
         .J .station__teams::after {
