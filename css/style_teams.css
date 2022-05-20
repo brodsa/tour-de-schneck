@@ -31,7 +31,7 @@
             background-color: #daeaf6
         }
         .O {
-            order: 4
+            order: 5
         }
         .O .team__all-points::after{ 
             content: " 56"
@@ -51,7 +51,7 @@
             background-color: #9bd0b7
         }
         .Z {
-            order: 5
+            order: 6
         }
         .Z .team__all-points::after{
             content: "55"
@@ -194,7 +194,7 @@
             background-color: #c2d5a8
         }
         .GO {
-            order: 3
+            order: 4
         }
         .GO .team__all-points::after{
             content: "58"
@@ -234,7 +234,7 @@
             background-color: #9d8189
         }
         .SC {
-            order: 6
+            order: 7
         }
         .SC .team__all-points::after{
             content: "52"
@@ -322,10 +322,10 @@
 
 
         .R .team__score::after {
-            content: "50/120"
+            content: "60/120"
         }
         .R .team__stations::after {
-            content: "6/12"
+            content: "7/12"
         }
         .R .team__bonus::after {
             content: "9/36"
@@ -334,10 +334,10 @@
             background-color: #ffafcc
         }
         .R {
-            order: 2
+            order: 1
         }
         .R .team__all-points::after{
-            content: "59"
+            content: "69"
         }
 
 
@@ -416,7 +416,7 @@
             background-color: #758184
         }
         .HW {
-            order: 1
+            order: 2
         }
         .HW .team__all-points::after{
             content: "64"
@@ -523,10 +523,10 @@
         }
 
         .SP .team__score::after {
-            content: "42/120"
+            content: "52/120"
         }
         .SP .team__stations::after {
-            content: "5/12"
+            content: "6/12"
         }
         .SP .team__bonus::after {
             content: "7/36"
@@ -535,10 +535,10 @@
             background-color: #f6bc66
         }
         .SP {
-            order: 7
+            order: 3
         }
         .SP .team__all-points::after{
-            content: "49"
+            content: "59"
         }
 
 
