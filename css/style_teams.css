@@ -80,7 +80,7 @@
 
 
         .DS .team__score::after {
-            content: "24/120"
+            content: "26/120"
         }
         .DS .team__stations::after {
             content: "4/12"
@@ -92,10 +92,10 @@
             background-color: #dab894
         }
         .DS {
-            order: 1
+            order: 0
         }
         .DS .team__all-points::after{
-            content: "30"
+            content: "32"
         }
         
 
@@ -154,7 +154,7 @@
             background-color: #E0BBE4
         }
         .GG {
-            order: 0
+            order: 1
         }
         .GG .team__all-points::after{
              content: "31"
