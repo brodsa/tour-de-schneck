@@ -92,7 +92,7 @@
             background-color: #dab894
         }
         .DS {
-            order: 0
+            order: 1
         }
         .DS .team__all-points::after{
             content: "12"
@@ -142,22 +142,22 @@
 
 
         .GG .team__score::after {
-            content: "9/120"
+            content: "15/120"
         }
         .GG .team__stations::after {
-            content: "2/12"
+            content: "3/12"
         }
         .GG .team__bonus::after {
-            content: "2/36"
+            content: "5/36"
         }
         .GG .team__logo {
             background-color: #E0BBE4
         }
         .GG {
-            order: 1
+            order: 0
         }
         .GG .team__all-points::after{
-             content: "11"
+             content: "20"
         }
 
 
