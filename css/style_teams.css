@@ -80,10 +80,10 @@
 
 
         .DS .team__score::after {
-            content: "36/120"
+            content: "41/120"
         }
         .DS .team__stations::after {
-            content: "5/12"
+            content: "6/12"
         }
         .DS .team__bonus::after {
             content: "6/36"
@@ -92,10 +92,10 @@
             background-color: #dab894
         }
         .DS {
-            order: 14
+            order: 11
         }
         .DS .team__all-points::after{
-            content: "42"
+            content: "47"
         }
         
 
@@ -133,7 +133,7 @@
             background-color: #957DAD
         }
         .OT {
-            order: 13
+            order: 14
         }
         .OT .team__all-points::after{
             content: " 44"
@@ -154,7 +154,7 @@
             background-color: #E0BBE4
         }
         .GG {
-            order: 11
+            order: 12
         }
         .GG .team__all-points::after{
              content: "44"
@@ -476,7 +476,7 @@
             background-color: #b8e0d2
         }
         .HV {
-            order: 12
+            order: 13
         }
         .HV .team__all-points::after{
             content: "44"
