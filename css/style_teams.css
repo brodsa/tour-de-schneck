@@ -12,7 +12,7 @@
             background-color: #bde0fe
         }
         .GL {
-            order: 11
+            order: 12
         }
         .GL .team__all-points::after{
             content: "28"
@@ -31,7 +31,7 @@
             background-color: #daeaf6
         }
         .O {
-            order: 10
+            order: 11
         }
         .O .team__all-points::after{ 
             content: " 29"
@@ -51,7 +51,7 @@
             background-color: #9bd0b7
         }
         .Z {
-            order: 12
+            order: 13
         }
         .Z .team__all-points::after{
             content: "25"
@@ -72,7 +72,7 @@
             background-color: #c23a22
         }
         .M {
-            order: 22
+            order: 24
         }
         .M .team__all-points::after{
             content: "0 "
@@ -92,7 +92,7 @@
             background-color: #dab894
         }
         .DS {
-            order: 4
+            order: 6
         }
         .DS .team__all-points::after{
             content: "32"
@@ -112,7 +112,7 @@
             background-color: #d6eadf
         }
         .DU {
-            order: 5
+            order: 7
         }
         .DU .team__all-points::after{
             content: "32"
@@ -133,7 +133,7 @@
             background-color: #957DAD
         }
         .OT {
-            order: 7
+            order: 8
         }
         .OT .team__all-points::after{
             content: " 31"
@@ -142,10 +142,10 @@
 
 
         .GG .team__score::after {
-            content: "24/120"
+            content: "27/120"
         }
         .GG .team__stations::after {
-            content: "4/12"
+            content: "5/12"
         }
         .GG .team__bonus::after {
             content: "7/36"
@@ -154,10 +154,10 @@
             background-color: #E0BBE4
         }
         .GG {
-            order: 6
+            order: 3
         }
         .GG .team__all-points::after{
-             content: "31"
+             content: "34"
         }
 
 
@@ -202,22 +202,22 @@
 
 
         .GV .team__score::after {
-            content: "7/120"
+            content: "17/120"
         }
         .GV .team__stations::after {
-            content: "1/12"
+            content: "2/12"
         }
         .GV .team__bonus::after {
-            content: "0/36"
+            content: "3/36"
         }
         .GV .team__logo {
             background-color: #ffdfdc
         }
         .GV {
-            order: 21
+            order: 17
         }
         .GV .team__all-points::after{
-            content: "7"
+            content: "20"
         }
 
 
@@ -254,7 +254,7 @@
             background-color: #cccccc
         }
         .V {
-            order: 24
+            order: 22
         }
         .V .team__all-points::after{
             content: "0"
@@ -274,7 +274,7 @@
             background-color: #9cadce
         }
         .MK {
-            order: 17
+            order: 18
         }
         .MK .team__all-points::after{
             content: "19"
@@ -294,7 +294,7 @@
             background-color: #a2d2ff
         }
         .SA {
-            order: 18
+            order: 19
         }
         .SA .team__all-points::after{
             content: "15"
@@ -314,7 +314,7 @@
             background-color: #5d5b6a
         }
         .P {
-            order: 13
+            order: 14
         }
         .P .team__all-points::after{
             content: "24"
@@ -334,7 +334,7 @@
             background-color: #ffafcc
         }
         .R {
-            order: 8
+            order: 9
         }
         .R .team__all-points::after{
             content: "30"
@@ -343,22 +343,22 @@
 
 
         .HS .team__score::after {
-            content: "19/120"
+            content: "27/120"
         }
         .HS .team__stations::after {
-            content: "2/12"
+            content: "3/12"
         }
         .HS .team__bonus::after {
-            content: "3/36"
+            content: "6/36"
         }
         .HS .team__logo {
             background-color: #efe9ae
         }
         .HS {
-            order: 15
+            order: 4
         }
         .HS .team__all-points::after{
-            content: "22"
+            content: "33"
         }
 
         
@@ -376,7 +376,7 @@
             background-color: #ff928b
         }
         .CE {
-            order: 3
+            order: 5
         }
         .CE .team__all-points::after{
             content: "33"
@@ -456,7 +456,7 @@
             background-color: #ff6663
         }
         .CO {
-            order: 19
+            order: 20
         }
         .CO .team__all-points::after{
             content: "13"
@@ -476,7 +476,7 @@
             background-color: #b8e0d2
         }
         .HV {
-            order: 14
+            order: 15
         }
         .HV .team__all-points::after{
             content: "22"
@@ -516,7 +516,7 @@
             background-color: #ffc8dd
         }
         .CA {
-            order: 9
+            order: 10
         }
         .CA .team__all-points::after{
             content: "29"
@@ -535,7 +535,7 @@
             background-color: #f6bc66
         }
         .SP {
-            order: 20
+            order: 21
         }
         .SP .team__all-points::after{
             content: "12"
