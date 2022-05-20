@@ -20,11 +20,11 @@
         }
 
         .F .station__teams::after {
-            content: "0/28"
+            content: "27/28"
         }
 
         .G .station__teams::after {
-            content: "8/28"
+            content: "9/28"
         }
 
         .H .station__teams::after {
