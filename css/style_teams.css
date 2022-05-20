@@ -334,7 +334,7 @@
             background-color: #ffafcc
         }
         .R {
-            order: 1
+            order: 2
         }
         .R .team__all-points::after{
             content: "69"
@@ -376,7 +376,7 @@
             background-color: #ff928b
         }
         .CE {
-            order: 0
+            order: 1
         }
         .CE .team__all-points::after{
             content: "71"
@@ -404,10 +404,10 @@
 
         
         .HW .team__score::after {
-            content: "55/120"
+            content: "65/120"
         }
         .HW .team__stations::after {
-            content: "7/12"
+            content: "8/12"
         }
         .HW .team__bonus::after {
             content: "9/36"
@@ -416,10 +416,10 @@
             background-color: #758184
         }
         .HW {
-            order: 2
+            order: 0
         }
         .HW .team__all-points::after{
-            content: "64"
+            content: "74"
         }
 
 
