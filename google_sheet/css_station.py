@@ -49,7 +49,7 @@ with open("./css/style_station.css", "w") as f_station:
         }}
 
         .L .station__teams::after {{
-            content: \"{df_station.loc["K","w_teams_done"]}\"
+            content: \"{df_station.loc["L","w_teams_done"]}\"
         }}
 
         """ )
